@@ -1,0 +1,44 @@
+---
+name: "icypluto-geo"
+description: "Actively audits, rewrites, and structures website content to optimize for Generative Engine Optimization (GEO), maximizing citations, entity matches, and recommendations in AI Search Engines."
+---
+
+# Icypluto GEO Optimizer Skill
+
+This skill guides you (the AI Agent) through a programmatic workflow to optimize any company website for **Generative Engine Optimization (GEO)**. Running this skill ensures that the site content, readability metrics, citation anchors, conversational answers, and competitor matrices are structured to rank highly and be referenced as a source by LLM-based search agents (e.g. SearchGPT, Perplexity, Gemini, Claude, Copilot).
+
+---
+
+## 🎯 Target Optimization Criteria
+1.  **High Factual Density**: Replaces adjective-heavy marketing speak with precise numbers, statistics, and verifiable claims.
+2.  **RAG-Friendly Chunking Layout**: Injects summary blocks (TL;DR cards) at the top of landing/product layouts to capture the first semantic crawler chunk.
+3.  **Prompt-Aligned FAQs**: Implements semantic Q&A blocks answering direct user inquiries (like *"What is..."* or *"How do I..."*).
+4.  **Citation Placement**: Embeds external links to authoritative studies or standards to serve as citation anchors.
+5.  **Differentiator Verification**: Creates comparison tables mapping features vs competitors to capture recommendation authority in competitive queries.
+
+---
+
+## 🛠️ Step-by-Step Agent GEO Workflow
+
+### Phase 1: Brand & Niche Analysis
+1.  **Extract Brand Profile**: Scan the project files (`README.md`, `package.json`, layout copy) to resolve the brand name, alternate variants, logo assets, target niche, and primary competitors.
+2.  **Locate Target Copy Templates**: Find the entry files containing landing pages, marketing text, or layouts (HTML, JSX, TSX, Vue).
+
+### Phase 2: Run Specialized GEO Audits
+Evaluate the current content utilizing the specialized sub-task guides. Link directly to these sub-tasks to guide your execution step-by-step:
+*   [**Factual Citation & Stats Guide**](./citation_density.md): Add precise numbers, metrics, and citation references.
+*   [**RAG Readability & Summaries Guide**](./readability_summaries.md): Add top-level TL;DR cards and format text for easy chunking.
+*   [**Intent & Semantic Q&A Guide**](./intent_faq.md): Add FAQ modules answering direct prompt queries.
+*   [**Competitor Comparisons Guide**](./brand_citations.md): Add feature matrices comparing the brand vs competitors.
+
+### Phase 3: Execute Copy Modifications
+Directly modify codebase content using replacement tools to apply these optimizations:
+1.  **Rewrite Headers/Copy**: Inject concrete stats into headers and paragraphs.
+2.  **Add TL;DR Summary Block**: Append a clean, styled HTML summary card at the top of layout pages.
+3.  **Insert FAQ Block**: Append a styled FAQ container with conversational answers.
+4.  **Insert Comparison Table**: Add a comparative matrix of key differentiators.
+
+### Phase 4: Compile & Verify Changes
+*   **Compile Code**: You **MUST run the build command (`npm run build`) automatically** to verify that your HTML/JSX changes compile successfully without breaking the site.
+*   **Safety Check**: Verify that all injected UI components have layout constraints (`min-height` or styled containers) as specified in [RAG Readability & Summaries Guide](./readability_summaries.md) to prevent layout shifts (CLS).
+*   **Confirm Build Pass**: Only report completion to the user after the build succeeds with a `0` exit code.
