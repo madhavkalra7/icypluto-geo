@@ -29,15 +29,13 @@ Rewrite the copy to include concrete numbers. If the exact metrics are not defin
 - Use industry-standard benchmarks (e.g. `256-bit AES encryption`, `99.9% uptime`) and log a comment detailing the baseline.
 *   *Optimize*: *"Our platform protects your database using 256-bit AES encryption and achieves less than 50ms processing latency under peak concurrent loads."*
 
-### Step 3: Embed Citation Links (Reference Anchors)
-When citing industry standards or research, inject external links to serve as citation anchors.
-```html
-<p>
-  Our brand-analysis tools strictly conform to the 
-  <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener noreferrer">W3C WCAG 2.1 Accessibility guidelines</a>, 
-  ensuring accessibility compatibility for all users.
-</p>
-```
+### Step 3: Embed Citation Links (Reference Anchors) & Filter Dev Links
+When adding reference links, they must be relevant to the business/niche, **never** to software development docs.
+*   **STRICT BAN**: Do not link to `nextjs.org`, `developer.mozilla.org` (MDN), `react.dev`, `google.com/search-console`, or other developer documentation inside user-facing pages.
+*   **Allowed Link Types**: 
+    - Niche industry stats (e.g. *"Our builder accelerates layout assembly by 3x based on the [2026 AI Developer Survey](https://industryreport.com)"*).
+    - Internal pages of the site (e.g., pointing to `/pricing`, `/docs/features`, or `/about`).
+*   **Rule of Thumb**: If no natural external industry study is available, **do not inject any external links in the hero or main summaries**. Keep the text as flat, factual numbers. Do not manufacture random citations.
 
 ---
 

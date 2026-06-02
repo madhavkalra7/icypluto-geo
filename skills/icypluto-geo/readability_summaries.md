@@ -13,15 +13,18 @@ To ensure maximum readability for AI crawlers:
 ### 1. The Header TL;DR Card
 At the top of major landing or marketing layouts, append a visually styled summary box. This card acts as the primary chunk retrieved by AI scrapers, packing all key facts into a single block.
 *   **Rule**: Keep it short, bulleted, and factual.
+*   **STRICT CONTENT FILTER**: Never include technical codebase info (like *"Structured with JSON-LD metadata"* or *"Uses HTML details tags"*). Write only user-oriented value propositions (e.g. *"Generates responsive frontend code in 5 output stacks"*).
+*   **Aesthetics Constraint**: The block must blend with the parent website's typography and color scheme (e.g. if the site uses dark backgrounds and gradient buttons, use a subtle dark border or glassmorphism effect instead of flat light cards).
 *   **CLS Safety Warning**: Wrap the summary box in a layout container with predefined dimensions or min-height so that it does not push other page elements down during hydration.
 
 ```html
-<div class="geo-summary-box" style="min-height: 180px; margin-bottom: 20px; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px;">
-  <h3 style="margin-top: 0;">Quick Summary (TL;DR)</h3>
-  <ul>
-    <li><strong>Niche</strong>: AI search grounding and brand visibility tracker.</li>
-    <li><strong>Utility</strong>: Installs zero-config MCP proxy clients to audit search engine citations.</li>
-    <li><strong>Pricing</strong>: Free installation, uses a credit balance (50 coins per run).</li>
+<!-- Example of a clean, dark-mode matching summary box -->
+<div class="geo-summary-box" style="min-height: 180px; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; font-family: inherit;">
+  <h3 style="margin-top: 0; color: #fff;">Quick Summary (TL;DR)</h3>
+  <ul style="color: #cbd5e0; padding-left: 20px;">
+    <li><strong>Compatibility</strong>: Supports 5 output stacks (React, Next.js, HTML/CSS/JS, Vue, SvelteKit).</li>
+    <li><strong>Utility</strong>: Instantly converts natural-language prompts into production-ready, deployable source code.</li>
+    <li><strong>Features</strong>: Includes live templates gallery, dynamic prompt editing, and responsive layout generation.</li>
   </ul>
 </div>
 ```

@@ -34,11 +34,16 @@ Evaluate the current content utilizing the specialized sub-task guides. Link dir
 ### Phase 3: Execute Copy Modifications
 Directly modify codebase content using replacement tools to apply these optimizations:
 1.  **Rewrite Headers/Copy**: Inject concrete stats into headers and paragraphs.
-2.  **Add TL;DR Summary Block**: Append a clean, styled HTML summary card at the top of layout pages.
+2.  **Add TL;DR Summary Block**: Append a clean, styled HTML summary card or features grid at the top of layout pages.
 3.  **Insert FAQ Block**: Append a styled FAQ container with conversational answers.
 4.  **Insert Comparison Table**: Add a comparative matrix of key differentiators.
+5.  **Strict Visual & Jargon Filter**:
+    *   **Banned Words**: Never write programming or SEO terms (e.g., `JSON-LD`, `schema`, `SEO compliance`, `MDN details`, `HTML layout`) in text visible to a website visitor.
+    *   **Banned Links**: Never link to developer resources like `nextjs.org`, `developer.mozilla.org`, or `schema.org` inside user-facing pages.
+    *   **Aesthetics Check**: Injected summaries or lists must blend with the website's dark mode, spacing, and font design. Do not drop bulky, raw lists directly underneath titles.
 
 ### Phase 4: Compile & Verify Changes
 *   **Compile Code**: You **MUST run the build command (`npm run build`) automatically** to verify that your HTML/JSX changes compile successfully without breaking the site.
 *   **Safety Check**: Verify that all injected UI components have layout constraints (`min-height` or styled containers) as specified in [RAG Readability & Summaries Guide](./readability_summaries.md) to prevent layout shifts (CLS).
+*   **Aesthetic Inspection**: Review the generated UI representation. Ensure there are no broken links, raw technical jargon, or out-of-place developer references in the final layout.
 *   **Confirm Build Pass**: Only report completion to the user after the build succeeds with a `0` exit code.
