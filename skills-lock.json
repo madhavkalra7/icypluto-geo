@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "icypluto-geo": {
+      "source": "madhavkalra7/icypluto-geo",
+      "sourceType": "github",
+      "skillPath": "skills/icypluto-geo/SKILL.md",
+      "computedHash": "5f38f794a5d93be69f6356647eb270175c299fa25cb1729d083055b261918eec"
+    }
+  }
+}

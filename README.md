@@ -15,6 +15,7 @@ The repository is structured as follows:
     - **[`readability_summaries.md`](./skills/icypluto-geo/readability_summaries.md)** - Guide for adding top-level TL;DR summary blocks optimized for semantic chunking and layout shift (CLS) safety.
     - **[`intent_faq.md`](./skills/icypluto-geo/intent_faq.md)** - Guide for constructing and injecting structured Q&A sections matching conversational search queries.
     - **[`brand_citations.md`](./skills/icypluto-geo/brand_citations.md)** - Guide for building comparison matrices and competitive differentiator tables.
+- **[`skills-lock.json`](./skills-lock.json)** - The project lockfile pinning the version, sourceType, and content hashes of installed skills for reproducible workflows.
 
 ---
 
