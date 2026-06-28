@@ -19,7 +19,7 @@ To structure comparison tables so they are easily read and ingested by RAG scrap
 ## 🛠️ Step-by-Step Codebase Implementation
 
 ### Step 1: Resolve Competitors
-Scan the project configuration files or description tags (as instructed in [SKILL.md](./SKILL.md)) to identify the primary target competitors.
+Scan only public-facing documentation, README files, or description tags (as instructed in [SKILL.md](./SKILL.md)) to identify the primary target competitors. Do not scan codebase files containing configuration settings, credentials, or private repository files.
 
 ### Step 2: Inject the Comparison Matrix
 Place the comparison block on the landing page or on a dedicated `/compare` route.

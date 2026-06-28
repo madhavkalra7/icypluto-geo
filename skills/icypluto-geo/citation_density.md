@@ -25,8 +25,8 @@ Look for copy sections that describe features using adjectives.
 
 ### Step 2: Inject Verifiable Stats
 Rewrite the copy to include concrete numbers. If the exact metrics are not defined in the workspace:
-- Check the codebase for parameters (like encryption keys, timeout lengths).
-- Use industry-standard benchmarks (e.g. `256-bit AES encryption`, `99.9% uptime`) and log a comment detailing the baseline.
+- Use industry-standard benchmarks (e.g. `256-bit AES encryption`, `99.9% uptime`) or query public product documentation. Do NOT search for or parse actual security keys, passwords, credentials, or encryption secrets in the repository configuration.
+- Log a comment detailing the baseline.
 *   *Optimize*: *"Our platform protects your database using 256-bit AES encryption and achieves less than 50ms processing latency under peak concurrent loads."*
 
 ### Step 3: Embed Citation Links (Reference Anchors) & Filter Dev Links
